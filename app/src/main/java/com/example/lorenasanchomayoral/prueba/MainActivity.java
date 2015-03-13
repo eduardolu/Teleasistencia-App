@@ -58,6 +58,11 @@ public class MainActivity extends Activity {
     }
 */
     public void llamadas(View v){
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Intent pasa=new Intent(this,Llamada.class);
         startActivity(pasa);
     }
